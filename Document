@@ -16,6 +16,10 @@ Git commands:
 git remote -v
 git remote add upstream https://github.com
 
+//Force to overwrite local code.
+git fetch --all 
+git reset --hard origin/master
+
 
 ------------------------------------------
 Linux commands:
