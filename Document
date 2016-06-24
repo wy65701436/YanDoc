@@ -16,3 +16,9 @@ Git commands:
 
 git remote -v
 git remote add upstream https://github.com
+
+
+------------------------------------------
+Linux commands:
+// Find the debug key words in all the C++ file.
+$find . -name \*.cpp -exec grep -q "debug" '{}' \; -print
