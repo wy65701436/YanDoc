@@ -9,3 +9,10 @@ Peculiar situations
 Debugging methods
 Best Practices
 Anything which can help you in future
+
+
+------------------------------------------
+Git commands:
+
+git remote -v
+git remote add upstream https://github.com
