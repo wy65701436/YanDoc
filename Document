@@ -27,4 +27,4 @@ Linux commands:
 $find . -name \*.cpp -exec grep -q "debug" '{}' \; -print
 
 // Delete all untagged docker images
-docker rmi $(docker images | grep "^<none>" | awk "{print $3}") 
+docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}") 
