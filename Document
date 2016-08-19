@@ -25,3 +25,6 @@ git reset --hard origin/master
 Linux commands:
 // Find the debug key words in all the C++ file.
 $find . -name \*.cpp -exec grep -q "debug" '{}' \; -print
+
+// Delete all untagged docker images
+docker rmi $(docker images | grep "^<none>" | awk "{print $3}") 
