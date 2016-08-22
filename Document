@@ -28,3 +28,6 @@ $find . -name \*.cpp -exec grep -q "debug" '{}' \; -print
 
 // Delete all untagged docker images
 docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}") 
+
+// link 
+ln -s /opt/sts-bundle/sts-3.6.3.RELEASE/STS /usr/local/bin/sts
