@@ -31,3 +31,7 @@ docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}")
 
 // link 
 ln -s /opt/sts-bundle/sts-3.6.3.RELEASE/STS /usr/local/bin/sts
+
+// set proxy for apt
+gedit /etc/apt/apt.conf
+Acquire::http::Proxy "http://yourproxyaddress:proxyport";
