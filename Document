@@ -20,7 +20,13 @@ git remote add upstream https://github.com
 git fetch upstream
 git checkout master
 git reset --hard upstream/master  
-git push origin master --force 
+git push origin master --force
+
+git fetch upstream
+git checkout upstream/dev
+git reset --hard upstream/dev  
+git checkout -b dev -- to add an new branch into origin.
+git push origin dev --force 
 
 
 ------------------------------------------
