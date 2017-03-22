@@ -28,6 +28,8 @@ git reset --hard upstream/dev
 git checkout -b dev -- to add an new branch into origin.
 git push origin dev --force 
 
+git rebase -i HEAD~10
+
 //git tutorial
 http://joehill.me/2016/02/18/2016-02-18-Git-Tutorial/
 
