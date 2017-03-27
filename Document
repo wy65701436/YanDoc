@@ -30,6 +30,9 @@ git push origin dev --force
 
 git rebase -i HEAD~10
 
+//delete the last commit
+git reset --hard HEAD~1
+
 //git tutorial
 http://joehill.me/2016/02/18/2016-02-18-Git-Tutorial/
 
