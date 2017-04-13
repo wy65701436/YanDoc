@@ -30,6 +30,10 @@ git push origin dev --force
 
 git rebase -i HEAD~10
 
+//squash commits
+git rebase -i upstream/master
+git push origin swagger-check
+
 //show the git command history
 git reflog
 
