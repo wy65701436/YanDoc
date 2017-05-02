@@ -29,9 +29,6 @@ git checkout -b dev -- to add an new branch into origin.
 git push origin dev --force 
 
 //squash commits
-git rebase -i HEAD~10
-
-//squash commits
 git rebase -i upstream/master
 git push origin swagger-check
 
@@ -63,3 +60,13 @@ ln -s /opt/sts-bundle/sts-3.6.3.RELEASE/STS /usr/local/bin/sts
 // set proxy for apt
 gedit /etc/apt/apt.conf
 Acquire::http::Proxy "http://yourproxyaddress:proxyport";
+
+------------------------------------------
+Docker commands:
+
+1. Make sure that exited containers are deleted.
+docker rm -v $(docker ps -a -q -f status=exited)
+2. Remove unwanted ‘dangling’ images.
+docker rmi $(docker images -f "dangling=true" -q)
+3. Still not enough space? What is this ‘vfs’ directory?
+docker volume rm $(docker volume ls -qf dangling=true)
