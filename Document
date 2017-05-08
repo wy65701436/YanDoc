@@ -70,3 +70,9 @@ docker rm -v $(docker ps -a -q -f status=exited)
 docker rmi $(docker images -f "dangling=true" -q)
 3. Still not enough space? What is this ‘vfs’ directory?
 docker volume rm $(docker volume ls -qf dangling=true)
+
+------------------------------------------
+GAS:
+go get -u github.com/GoASTScanner/gas
+gas -fmt=json -out=results.json -skip "*vendor*" -quiet ./...
+
