@@ -76,3 +76,9 @@ GAS:
 go get -u github.com/GoASTScanner/gas
 gas -fmt=json -out=results.json -skip "*vendor*" -quiet ./...
 
+------------------------------------------
+Drone:
+./drone -s https://ci.vmware.run -t {token} secure --in secrets.yml  --out ".drone.sec" --repo vmware/harbor --yaml ".drone.yml"
+
+
+
