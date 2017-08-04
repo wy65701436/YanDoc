@@ -87,4 +87,6 @@ Docker Errors for deamon.
 {"errors":[{"code":"BLOB_UNKNOWN","message":"blob unknown to registry","detail":"sha256:7a10e723df312f30e391acbc86450113b63a845889346e0b91ba62eaaf0777e1"}]}
 {\"errors\":[{\"code\":\"412\",\"message\":\"The image is not signed in Notary.\",\"detail\":\"The image is not signed in Notary.\"}]}
 
-
+--------------------------------------------
+Mysql
+socat TCP-LISTEN:3306,fork TCP:172.17.0.5:3306
