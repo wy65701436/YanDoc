@@ -93,3 +93,7 @@ socat TCP-LISTEN:3306,fork TCP:172.17.0.5:3306
 
 //Repo
 https://ci.appveyor.com/api/github/webhook?id=l7ruq5kqnq564sf1
+
+--------------------------------------------
+GO build
+/build/apps/bin/gobuild sandbox queue  harbor_build --branch=master --changeset=$LATEST_CHANGE  --buildtype=beta  --user=daojunz -v
