@@ -54,6 +54,8 @@ $find . -name \*.cpp -exec grep -q "debug" '{}' \; -print
 // Delete all untagged docker images
 docker rmi -f $(docker images | grep "^<none>" | awk "{print $3}") 
 
+comm -23 <(find . -type f -name "link" | grep "_manifests/revisions/sha256" | grep -v "\/signatures\/sha256\/" | awk -F/ '{print $(NF-1)}' | sort) <(for f in $(find . -type f -name "link" | grep "_manifests/tags/.*/current/link"); do cat ${f} | sed 's/^sha256://g'; echo; done | sort) | wc -l
+
 // link 
 ln -s /opt/sts-bundle/sts-3.6.3.RELEASE/STS /usr/local/bin/sts
 
