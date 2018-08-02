@@ -101,3 +101,5 @@ GO build
 /build/apps/bin/gobuild sandbox queue  harbor_build --branch=master --changeset=$LATEST_CHANGE  --buildtype=beta  --user=daojunz -v
 
 du . -h --max-depth=1
+
+https://www.shellcheck.net/
