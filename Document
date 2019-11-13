@@ -63,6 +63,9 @@ ln -s /opt/sts-bundle/sts-3.6.3.RELEASE/STS /usr/local/bin/sts
 gedit /etc/apt/apt.conf
 Acquire::http::Proxy "http://yourproxyaddress:proxyport";
 
+// listen port
+lsof -i -P -n | grep LISTEN
+
 ------------------------------------------
 Docker commands:
 
