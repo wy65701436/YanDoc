@@ -45,6 +45,8 @@ git reset --hard HEAD~1
 //git tutorial
 http://joehill.me/2016/02/18/2016-02-18-Git-Tutorial/
 
+// git delete bunch of branches
+git branch | grep "<pattern>" | xargs git branch -D
 
 ------------------------------------------
 Linux commands:
